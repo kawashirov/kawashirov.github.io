@@ -1,0 +1,109 @@
+[⬅️ Назад](./)
+
+# Домена и IP VRChat
+Ниже приведены списки доменов и IP, которые использует VRChat.
+
+Вы можете использовать их для настройки zapret, XRay, v2rayN, NekoBox и т.п.
+
+Списки не полные и требуют дополнения.
+
+
+### Домены самого VRChat:
+```
+vrchat.com
+vrchat.net
+vrchat.cloud
+vrchat.community
+vrchatassets.com
+vrcdn.live
+vrcdn.video
+vrcdn.cloud
+```
+
+
+### Поддомены VRChat:
+```
+api.vrchat.cloud
+pipeline.vrchat.cloud
+status.vrchat.com
+assets.vrchat.com
+creators.vrchat.com
+docs.vrchat.com
+wiki.vrchat.com
+files.vrchat.cloud
+cdn.vrchat.com
+vrcpm.vrchat.cloud
+ask.vrchat.com
+feedback.vrchat.com
+help.vrchat.com
+hello.vrchat.com
+dev-api.vrchat.cloud
+redirect.vrchat.com
+file-variants.vrchat.cloud
+api.vrchat.com
+files.vrchat.com
+```
+
+
+### Сторонние сервисы, которые использует VRChat:
+```
+cloudfront.net
+dbinj8iahsbec.cloudfront.net
+cloud.unity3d.com
+internal.unity3d.com
+ns.photonengine.io
+amplitude.com
+```
+
+
+## Основные блоки адресов:
+```
+80.93.0.0/16
+85.234.0.0/16
+
+37.9.0.0/16
+86.105.0.0/16
+
+5.8.0.0/16
+188.241.0.0/16
+
+87.120.0.0/16
+82.117.0.0/16
+
+203.0.113.113/32
+216.120.180.0/23
+```
+
+Это не все адреса, и возможно у вас другие - часто зависит от региона и провайдера.
+
+В идеале, вы резолвите домены выше вашим DNS в IP, а у IP находите AS-подсеть, а подсети смотрите все прфеиксы.
+
+### Эти IP дала техподдержка, но они явно не полные:
+```
+216.120.180.0/23
+91.199.81.0/24
+185.67.124.0/24
+```
+
+### Также:
+- [AS199524](https://bgp.he.net/AS199524#_prefixes) - адреса Photon, с которыми работает VRChat (UDP 5055, 5056, 5058)
+- См. [файлы zapret от kotrik](https://github.com/KotRikD/zapret-win/tree/master/zapret-bundle/files), содержит нужные домены и IP. 
+
+### Скрипт на python, что бы узнать список IP Amazon AWS:
+```
+import subprocess
+import json
+result = subprocess.run(['curl', '-s', 'https://ip-ranges.amazonaws.com/ip-ranges.json'],capture_output=True, text=True)
+data = json.loads(result.stdout)
+ip_prefixes = [prefix['ip_prefix'] for prefix in data['prefixes']]
+with open('aws_cidr.txt', 'w') as f:
+```
+([Сам список](https://ip-ranges.amazonaws.com/ip-ranges.json).)
+
+### Имена процессов VRChat, которым следует заворачивать трафик:
+```
+start_protected_game.exe
+VRChat.exe
+yt-dlp.exe
+launch.exe
+```
