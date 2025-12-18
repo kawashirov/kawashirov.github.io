@@ -1,4 +1,4 @@
-[⬅️ Назад](..)
+[⬅️ Назад](./)
 
 # Cloudflare WARP через XRay VPN (WARP-over-VLESS) для VRChat
 Ниже я опишу как сделать проброс Cloudflare WARP через любой VPN на основе XRay.
