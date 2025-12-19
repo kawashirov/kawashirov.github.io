@@ -98,7 +98,7 @@ amplitude.com
 - См. [файлы zapret от kotrik](https://github.com/KotRikD/zapret-win/tree/master/zapret-bundle/files), содержит нужные домены и IP. 
 
 ### Скрипт на python, что бы узнать список IP Amazon AWS:
-```
+```python
 import subprocess
 import json
 result = subprocess.run(['curl', '-s', 'https://ip-ranges.amazonaws.com/ip-ranges.json'],capture_output=True, text=True)
