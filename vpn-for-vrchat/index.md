@@ -1,7 +1,7 @@
 ---
 title: Общая информация по (раз)блокировке VRChat
 description: Как заходить в VRChat в эпоху ограниченного интернета, и как преодолеть связанные с этим проблемы.
-image: ./opengraph-image-480x270.png
+image: /vpn-for-vrchat/opengraph-image-480x270.png
 ---
 
 

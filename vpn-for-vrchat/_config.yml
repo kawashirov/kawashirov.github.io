@@ -3,8 +3,8 @@ tagline: Как заходить в VRChat в эпоху ограниченно�
 description: Как заходить в VRChat в эпоху ограниченного интернета
 locale: ru_RU
 url: https://kawashirov.github.io/vpn-for-vrchat/
-logo: ./opengraph-image-480x270.png
-image: ./opengraph-image-480x270.png
+logo: /vpn-for-vrchat/opengraph-image-480x270.png
+image: /vpn-for-vrchat/opengraph-image-480x270.png
 author: kawashirov
 email: 1196609+kawashirov@users.noreply.github.com
 
