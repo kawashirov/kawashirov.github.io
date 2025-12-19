@@ -1,12 +1,12 @@
 ---
-title: Домена и IP VRChat
+title: Домены и IP VRChat
 description: Списки доменов и IP, которые использует VRChat.
 ---
 
 
 [⬅️ Назад](./)
 
-# Домена и IP VRChat
+# Домены и IP VRChat
 Ниже приведены списки доменов и IP, которые использует VRChat.
 
 Вы можете использовать их для настройки zapret, XRay, v2rayN, NekoBox и т.п.

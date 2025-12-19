@@ -6,15 +6,18 @@ image: /vpn-for-vrchat/opengraph-image-480x270.png
 
 
 # Общая информация по (раз)блокировке VRChat
-Эта страница -- сборная солянка информации о том, как заходить в VRChat в эпоху ограниченного интернета, и как преодолеть связанные с этим проблемы.
-Основное обсуждение на [сервере VRChatRU в Discord](https://vrcru.org/discord) в [соответствующей ветке](https://discord.com/channels/666306330230915093/1306550460777234452).
+Эта страница -- сборная солянка информации о том,
+**как заходить в VRChat** в эпоху ограниченного интернета,
+и как преодолеть связанные с этим проблемы.
+Основное обсуждение на [сервере **VRChatRU** в **Discord**](https://vrcru.org/discord)
+в [**соответствующей ветке**](https://discord.com/channels/666306330230915093/1306550460777234452).
 
 ### Под-страницы
 (помимо стен текста ниже)
 - [Как использовать AmneziaWG + Cloudflare WARP](./amneziawg-warp.md)
 - [Как сделать Cloudflare WARP на своём VPN (на VPS с 3x-ui)](./3x-ui.md)
 - [Как пробросить Cloudflare WARP через любой XRay VPN (WARP-over-VLESS)](./warp-over-xray.md)
-- [Домена и IP VRChat](./domains-and-ips.md)
+- [Домены и IP VRChat](./domains-and-ips.md)
 
 
 # Ситуация на данный момент
@@ -37,7 +40,11 @@ image: /vpn-for-vrchat/opengraph-image-480x270.png
 ### Вот они, наши всадники апокалипсиса, которые мы уже знаем в лицо:
 ![errors.png](./errors.png)
 
-Кстати, **пожаловаться на ошибки** в России можно [на **отдельной странице** на форуме VRChat для обратной связи](https://feedback.vrchat.com/bug-reports/p/general-connection-problems-in-russia). Чем больше голосов, тем лучше.
+Кстати, **пожаловаться на ошибки** в России можно [на **отдельной странице** на форуме VRChat для обратной связи](https://feedback.vrchat.com/bug-reports/p/general-connection-problems-in-russia).
+
+![vrchat-feedback-post-1.png](./vrchat-feedback-post-1.png)
+
+Чем больше голосов, тем лучше.
 
 
 # И что же делать?
