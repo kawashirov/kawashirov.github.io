@@ -1,3 +1,9 @@
+---
+title: Cloudflare WARP через любой XRay VPN
+description: Как сделать проброс Cloudflare WARP через любой VPN на основе XRay (WARP-over-VLESS) для VRChat.
+---
+
+
 [⬅️ Назад](./)
 
 # Как пробросить Cloudflare WARP через любой XRay VPN (WARP-over-VLESS)

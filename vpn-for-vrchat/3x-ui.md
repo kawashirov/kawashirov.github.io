@@ -1,3 +1,9 @@
+---
+title: Cloudflare WARP на своём VPN
+description: Как сделать Cloudflare WARP на своём VPN (на VPS с 3x-ui) для VRChat.
+---
+
+
 [⬅️ Назад](./)
 
 # Как сделать Cloudflare WARP на своём VPN (на VPS с 3x-ui)?
@@ -10,7 +16,7 @@
 [Вместо этого есть куча инструкций](https://www.youtube.com/results?search_query=3x-ui+%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+warp).
 
 Единственное замечание - в качестве скрипта для установки лучше использовать **оригинальный**:
-```
+```shell
 bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
 ```
 в инструкциях часто есть ссылки на другие установщики, не все из них **злонамеренные**, но некоторые -- да.

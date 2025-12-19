@@ -1,7 +1,13 @@
+---
+title: AmneziaWG + Cloudflare WARP
+description: Использование AmneziaWG с Cloudflare WARP для VRChat.
+---
+
+
 [⬅️ Назад](./)
 
 # Как использовать AmneziaWG + Cloudflare WARP?
-**Да! На данный момент, это не плохое решение.**
+На данный момент, это **не плохое решение** для VRChat.
 В чём суть: **WARP** под капотом использует **WireGuard**. Он заблокирован.
 Но у WireGuard есть форк (модификация) - **AmneziaWG** (он же AWG, не путать с Amnezia). Он (пока что) хорошо обходит блокировки.
 И к WARP **можно** подключаться через **AmneziaWG**. Этот способ не всегда и не у всех работает. (Опять же - специфика DPI на ТСПУ в зависимости от времени, места, провайдера и т.п.)
@@ -25,10 +31,10 @@
 
 ## Что нужно для AmneziaWG + Cloudflare WARP на Android и на шлемах (Quest / Pico)?
 Нужно просто установить `.apk` AmneziaWG, а в целом всё тоже самое, что и на Windows.
-[Скачать AmneziaWG для Android можно тут](https://github.com/amnezia-vpn/amneziawg-android/releases) (файл `AmneziaWG.apk`).
+[Скачать **AmneziaWG для Android** можно тут](https://github.com/amnezia-vpn/amneziawg-android/releases) (файл `AmneziaWG.apk`).
 Вопрос как именно установить `.apk` на телефоне или шлеме я оставлю за скобками.
 
-На Quest этот способ также чинит неработающие сервисы Meta.
+На **Quest** этот способ также **чинит** неработающие **сервисы Meta**.
 
 ## Что делать если AmneziaWG + Cloudflare WARP не работает?
 Вариантов не много:

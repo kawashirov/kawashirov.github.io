@@ -1,5 +1,6 @@
 ---
 title: Домена и IP VRChat
+description: Списки доменов и IP, которые использует VRChat.
 ---
 
 
