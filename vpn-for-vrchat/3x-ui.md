@@ -21,21 +21,21 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 - зайти во вкладку **Xray Configs** слева
 - зайти во вкладку **Outbounds**
 - убедиться, что в списке есть строка с `Tag` = `warp`, `Address` = `engage.cloudflareclient.com:2408`
-![3x-ui-warp-outbounds-list.png](./3x-ui-warp-outbounds-list.png)
-- - если нет, создать её, нажав кнопку **☁️WARP** сверху списка
-- - **обязательно** нажать **Save** сверху над вкладками, должно вылезти **The parameters have been changed.**
+  <br>![3x-ui-warp-outbounds-list.png](./3x-ui-warp-outbounds-list.png)
+  - если нет, создать её, нажав кнопку **☁️WARP** сверху списка
+  - **обязательно** нажать **Save** сверху над вкладками, должно вылезти **The parameters have been changed.**
 - зайти во вкладку **Routing Rules** и настроить правила под warp как угодно, проще всего:
-- - добавить правило, нажав **Add Rule** сверху списка.
-- - выставить `Outbound Tag` = `warp` - это скажет правилу гонять трафик в наш Warp Outbound.
-- - теперь нужно указать что именно мы хотим роутить в warp, для этого проще всего выставить какое-то поле, которое покроет весь трафиик, например `Source IPs` = `0.0.0.0/0` или `Network` = `TCP,UDP` - это нужно, т.к. из-за пустых правил XRay выдаёт ошибку.
-![3x-ui-warp-outbound-edit-rule.png](./3x-ui-warp-outbound-edit-rule.png)
-- - подтвердить правило нажав **Add Rule** (или **Sure**)
-- - **обязательно** нажать **Save** сверху над вкладками, должно вылезти **The parameters have been changed.**
+  - добавить правило, нажав **Add Rule** сверху списка.
+  - выставить `Outbound Tag` = `warp` - это скажет правилу гонять трафик в наш Warp Outbound.
+  - теперь нужно указать что именно мы хотим роутить в warp, для этого проще всего выставить какое-то поле, которое покроет весь трафиик, например `Source IPs` = `0.0.0.0/0` или `Network` = `TCP,UDP` - это нужно, т.к. из-за пустых правил XRay выдаёт ошибку.
+    <br>![3x-ui-warp-outbound-edit-rule.png](./3x-ui-warp-outbound-edit-rule.png)
+  - подтвердить правило нажав **Add Rule** (или **Sure**)
+  - **обязательно** нажать **Save** сверху над вкладками, должно вылезти **The parameters have been changed.**
 - должно быть примерно так:
-![3x-ui-warp-rules-list.png](./3x-ui-warp-rules-list.png)
+  <br>![3x-ui-warp-rules-list.png](./3x-ui-warp-rules-list.png)
 - **обязательно** нажать **Restart Xray** сверху над вкладками, должно вылезти **Xray has been successfully relaunched.**
 
 В результате, **ваш VPN будет гонять трафик через WARP и VRChat'у это должно понравиться**.
 
-Если вы используете что-то другое вместо 3x-ui, то сопособ настройки аналогичный.
+Если вы используете что-то другое вместо 3x-ui, то способ настройки аналогичный.
 
