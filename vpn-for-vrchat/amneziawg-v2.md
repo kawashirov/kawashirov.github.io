@@ -20,21 +20,23 @@ logo: /vpn-for-vrchat/opengraph-image-amneziawg-1600x900.png
 
 ![amneziawg-logo-1024x384.png](./amneziawg-logo-1024x384.png)
 
-Но по каким-то причинам, разработчики AmneziaWG **не** опубликовали бинарные файлы и установщики,
+Но по каким-то причинам, на момент написания этих страниц, разработчики AmneziaWG **не** опубликовали бинарные файлы и установщики,
 а на странице [Releases](https://github.com/amnezia-vpn/amneziawg-windows-client/releases)
 лежит всё ещё **старая версия** [`1.0.2` от Мая 2025](https://github.com/amnezia-vpn/amneziawg-windows-client/releases/tag/1.0.2).
 
 ### По этому, нужно собрать их самим:
-1. Получить проект у себя на компе с открытым терминалом:
-  - Либо вручную:
+1. **Получить проект** у себя на компе с открытым терминалом:
+  - Либо **вручную**:
     1. Зайти на [проект с github.com](https://github.com/amnezia-vpn/amneziawg-windows-client/)
     2. Нажать Code -> Download ZIP
     3. Скачать и распаковать где-нибудь.
     2. Зайти в папку, нажать по пустому месту правой кнопкой и нажать "Открыть в Терминале"
-  - Либо через терминал:
+
+  - Либо через терминал **командами**:
     1. `git clone https://github.com/amnezia-vpn/amneziawg-windows-client.git`
     2. `cd amneziawg-windows-client`
-2. Запустить сборку в этом терминале:
+
+2. **Запустить сборку** в этом терминале:
   1. Запускаем `.\build.bat`
   2. Должна начаться сборка.
      <br>![amneziawg-v2-build-start.png](./amneziawg-v2-build-start.png)<br>
@@ -58,9 +60,4 @@ logo: /vpn-for-vrchat/opengraph-image-amneziawg-1600x900.png
 2. Заходим в `C:\Program Files\AmneziaWG\` (ну или где там у вас она установлена)
 3. Перекидывем туда из `amd64` все файлы (`amneziawg.exe`, `awg.exe` и `wintun.dll`) -- для этого **нужны права администратора**.
 4. Запускам `amneziawg.exe` -- всё должно работать.
-
-
-
-
-
 
