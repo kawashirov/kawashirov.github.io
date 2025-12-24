@@ -26,25 +26,25 @@ logo: /vpn-for-vrchat/opengraph-image-amneziawg-1600x900.png
 
 ### По этому, нужно собрать их самим:
 1. **Получить проект** у себя на компе с открытым терминалом:
-  - Либо **вручную**:
-    1. Зайти на [проект с github.com](https://github.com/amnezia-vpn/amneziawg-windows-client/)
-    2. Нажать Code -> Download ZIP
-    3. Скачать и распаковать где-нибудь.
-    2. Зайти в папку, нажать по пустому месту правой кнопкой и нажать "Открыть в Терминале"
-
-  - Либо через терминал **командами**:
-    1. `git clone https://github.com/amnezia-vpn/amneziawg-windows-client.git`
-    2. `cd amneziawg-windows-client`
+    - Либо **вручную**:
+        1. Зайти на [проект с github.com](https://github.com/amnezia-vpn/amneziawg-windows-client/)
+        2. Нажать Code → Download ZIP
+        3. Скачать и распаковать где-нибудь
+        4. Зайти в папку, нажать по пустому месту правой кнопкой и нажать **"Открыть в Терминале"**
+    
+    - Либо через терминал **командами**:
+        1. `git clone https://github.com/amnezia-vpn/amneziawg-windows-client.git`
+        2. `cd amneziawg-windows-client`
 
 2. **Запустить сборку** в этом терминале:
-  1. Запускаем `.\build.bat`
-  2. Должна начаться сборка.
-     <br>![amneziawg-v2-build-start.png](./amneziawg-v2-build-start.png)<br>
-     Сначала будет скачиваться среда `go`, `mingw` и прочие зависимости, а затем будет компиляция. Это займёт некоторое время.
-  3. В результате должно написать `[+] Success. Launch amneziawg.exe.`
-     <br>![amneziawg-v2-build-success.png](./amneziawg-v2-build-success.png)<br>
-     и должны появиться новые папки: `x86`, `arm64` и `amd64`.
-     В них лежат готовые к использованию сборки AmneziaWG.
+    1. Запускаем `.\build.bat`
+    2. Должна начаться сборка.
+       <br>![amneziawg-v2-build-start.png](./amneziawg-v2-build-start.png)<br>
+       Сначала будет скачиваться среда `go`, `mingw` и прочие зависимости, а затем будет компиляция. Это займёт некоторое время.
+    3. В результате должно написать `[+] Success. Launch amneziawg.exe.`
+       <br>![amneziawg-v2-build-success.png](./amneziawg-v2-build-success.png)<br>
+       и должны появиться новые папки: `x86`, `arm64` и `amd64`.
+       В них лежат готовые к использованию сборки AmneziaWG.
 
 Если это выглядят для вас слишком сложно или возникли какие-то проблемы,
 то можете **скачать готовые файлы у тех, кому доверяете**.
@@ -55,7 +55,8 @@ logo: /vpn-for-vrchat/opengraph-image-amneziawg-1600x900.png
 
 ### Если у вас уже установлена (старая) AmneziaWG на ПК
 То проще просто **закинуть новые файлы поверх старых**.
-   Этот способ позволяет AmneziaWG сразу "подсосаться" к вашим уже существующим конфигам и **продолжить рабоать бесшовно**.
+Этот способ позволяет AmneziaWG сразу "подсосаться" к вашим уже существующим конфигам и **продолжить рабоать бесшовно**.
+
 1. Отключаем все VPNы, **закрываем** их, даже из системного трея возле часов, особено AmneziaWG.
 2. Заходим в `C:\Program Files\AmneziaWG\` (ну или где там у вас она установлена)
 3. Перекидывем туда из `amd64` все файлы (`amneziawg.exe`, `awg.exe` и `wintun.dll`) -- для этого **нужны права администратора**.
