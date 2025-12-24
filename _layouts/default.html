@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
     {% seo %}
+    <style>
+        ol,
+        ol ol,
+        ol ol ol {
+            list-style-type: decimal !important;
+        }
+    </style>
   </head>
   <body>
     <br>
     <div class="container markdown-body">
       <br>
       {{ content }}
+      <br>
     </div>
+    <br>
     <script src="{{ "assets/javascript/anchor-js/anchor.min.js" | relative_url }}"></script>
     <script>anchors.add();</script>
   </body>
