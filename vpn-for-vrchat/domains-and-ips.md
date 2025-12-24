@@ -6,6 +6,7 @@ description: Списки доменов и IP, которые использу�
 
 [⬅️ Назад](./)
 
+
 # Домены и IP VRChat
 Ниже приведены списки доменов и IP, которые использует VRChat.
 
@@ -101,10 +102,13 @@ amplitude.com
 ```python
 import subprocess
 import json
-result = subprocess.run(['curl', '-s', 'https://ip-ranges.amazonaws.com/ip-ranges.json'],capture_output=True, text=True)
+result = subprocess.run(['curl', '-s', 'https://ip-ranges.amazonaws.com/ip-ranges.json'], capture_output=True, text=True)
 data = json.loads(result.stdout)
 ip_prefixes = [prefix['ip_prefix'] for prefix in data['prefixes']]
 with open('aws_cidr.txt', 'w') as f:
+    for ip in ip_prefixes:
+        f.write(ip + '\n')
+    print(f"Сохранено {len(ip_prefixes)} IP")
 ```
 ([Сам список](https://ip-ranges.amazonaws.com/ip-ranges.json).)
 
