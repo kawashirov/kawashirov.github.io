@@ -104,6 +104,8 @@ vrcdn.cloud
 
 Это нужно делать периодически, т.к. они теряют актуальность и меняются.
 
+В API VRChat есть ping-эндпоинт: `https://api.vrchat.cloud/api/1/ping`, на что должен придти ответ `"pong"`.
+
 ### Скрипт на python, что бы узнать список IP Amazon AWS:
 ```python
 import subprocess
